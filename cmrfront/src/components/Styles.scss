@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap');
+body {
+  margin: 0;
+}
+/* Header bar related styles */
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: max-content;
+    font-family: 'Bree Serif', serif;
+    font-weight: bold;
+
+    .title-container {
+        font-size: xx-large;
+    }
+
+    .menu-container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+
+        .menu-item {
+            cursor: pointer;
+            &:hover {
+                transform: scale(1.5);
+            }
+        }
+    }
+}
+/* Radio button related styles */
+.content-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 92.3vh;
+    background: #feb3c4;
+
+    .radio-btn {
+        width: 10rem;
+        padding: 1rem;
+        text-align: left;
+        text-transform: capitalize;
+        display: flex;
+        align-items: center;
+
+        .radio-label {
+            padding: 0 1rem;
+            font-weight: bold;
+        }
+    }
+}
